@@ -1,0 +1,60 @@
+---
+title: "ClinLab_HW"
+author: "Ekaterina Fokina"
+date: "2022-10-24"
+output: 
+  html_document:
+  css: style.css
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning=FALSE}
+library(tidyverse)
+library(psych)
+```
+
+
+# Прочитаем данные и посмотрим на общую информацию по ним
+
+```{r}
+diabetes <- read.csv("diabetes.csv")
+
+summary(diabetes)
+
+```
+
+# Поработаем с количественными переменными
+
+Заменим все нулевые значения в колонках Glucoe, BloodPressure, SkinThickness, Insulin и BMI на NA как малосовместимые с жизнью.
+Помимо этого, переведем значения глюкозы в более привычную для нас размерность ммоль/л.
+
+```{r}
+diabetes <- diabetes %>%
+  mutate(Glucose = ifelse(Glucose == 0, NA, Glucose),
+         BloodPressure = ifelse(BloodPressure == 0, NA, BloodPressure),
+         SkinThickness = ifelse(SkinThickness == 0, NA, SkinThickness),
+         Insulin = ifelse(Insulin == 0, NA, Insulin),
+         BMI = ifelse(BMI == 0, NA, BMI),
+         Glucose_mmol = round(Glucose / 18, 1))
+```
+
+
+# Вопрос №1
+
+*Количество пациентов, которым можно выставить диагноз сахарный диабет?*
+
+<br>
+
+*Количество пациентов без нарушения толерантности к глюкозе?*
+
+<br>
+
+```{r}
+length(which(diabetes$))
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
