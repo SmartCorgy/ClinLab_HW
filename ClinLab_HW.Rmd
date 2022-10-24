@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r, warning=FALSE}
 library(tidyverse)
-library(psych)
+library(pROC)
 ```
 
 
@@ -29,17 +29,17 @@ summary(diabetes)
 
 # Поработаем с количественными переменными
 
-Заменим все нулевые значения в колонках Glucoe, BloodPressure, SkinThickness, Insulin и BMI на NA как малосовместимые с жизнью.
+Заменим все нулевые значения в колонках Glucose, BloodPressure, SkinThickness, Insulin и BMI на NA как малосовместимые с жизнью.
 Помимо этого, переведем значения глюкозы в более привычную для нас размерность ммоль/л.
 
 ```{r}
+
 diabetes <- diabetes %>%
-  mutate(Glucose = ifelse(Glucose == 0, NA, Glucose),
-         BloodPressure = ifelse(BloodPressure == 0, NA, BloodPressure),
-         SkinThickness = ifelse(SkinThickness == 0, NA, SkinThickness),
-         Insulin = ifelse(Insulin == 0, NA, Insulin),
-         BMI = ifelse(BMI == 0, NA, BMI),
-         Glucose_mmol = round(Glucose / 18, 1))
+  mutate(across(c(Glucose, BloodPressure, SkinThickness, Insulin, BMI), ~ ifelse(.x == 0, NA, .x)),
+         Glucose_mmol = round(Glucose / 18, 1),
+         Glucose_mmol = as.numeric(Glucose_mmol))
+
+
 ```
 
 
@@ -54,7 +54,36 @@ diabetes <- diabetes %>%
 <br>
 
 ```{r}
-length(which(diabetes$))
+
+# Создадим вектор всех значений глюкозы в ммоль/л, за исключением пропущенных значений
+
+diabetes_no_nas <- diabetes[complete.cases(diabetes$Glucose_mmol), ]$Glucose_mmol
+
+# И посчитаем количество элементов, удовлетворяющих условиям
+
+patients_with_diabetes <- length(diabetes_no_nas[diabetes_no_nas >= 7.8])
+patients_with_diabetes
+
+patients_without_diabetes <- length(diabetes_no_nas[diabetes_no_nas < 7.8])
+patients_without_diabetes
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Таким образом, если использовать в качестве порогового критерия уровень глюкозы >= 7.8 ммоль/л, то сахарный диабет можно установить у **197** пациентов.
+У **566* пациентов нарушения толерантности к глюкозе нет.
+
+<br>
+
+# Вопрос №2
+
+*ROC-кривая для предсказания сахарного диабета по уровню гликемии*
+
+```{r}
+tbl_summary_my <- 
+  diabetes %>%
+  select(Glucose_mmol) %>%
+  tbl_summary()
+
+
+```
+
