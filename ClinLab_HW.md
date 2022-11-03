@@ -150,12 +150,12 @@ diabetes%>%
 ```
 
 ```{=html}
-<div id="fbqzspeyph" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ggwgjqkzdp" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#fbqzspeyph .gt_table {
+#ggwgjqkzdp .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -180,7 +180,7 @@ diabetes%>%
   border-left-color: #D3D3D3;
 }
 
-#fbqzspeyph .gt_heading {
+#ggwgjqkzdp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -192,7 +192,7 @@ diabetes%>%
   border-right-color: #D3D3D3;
 }
 
-#fbqzspeyph .gt_title {
+#ggwgjqkzdp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -204,7 +204,7 @@ diabetes%>%
   border-bottom-width: 0;
 }
 
-#fbqzspeyph .gt_subtitle {
+#ggwgjqkzdp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -216,13 +216,13 @@ diabetes%>%
   border-top-width: 0;
 }
 
-#fbqzspeyph .gt_bottom_border {
+#ggwgjqkzdp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fbqzspeyph .gt_col_headings {
+#ggwgjqkzdp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -237,7 +237,7 @@ diabetes%>%
   border-right-color: #D3D3D3;
 }
 
-#fbqzspeyph .gt_col_heading {
+#ggwgjqkzdp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -257,7 +257,7 @@ diabetes%>%
   overflow-x: hidden;
 }
 
-#fbqzspeyph .gt_column_spanner_outer {
+#ggwgjqkzdp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -269,15 +269,15 @@ diabetes%>%
   padding-right: 4px;
 }
 
-#fbqzspeyph .gt_column_spanner_outer:first-child {
+#ggwgjqkzdp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fbqzspeyph .gt_column_spanner_outer:last-child {
+#ggwgjqkzdp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fbqzspeyph .gt_column_spanner {
+#ggwgjqkzdp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -289,7 +289,7 @@ diabetes%>%
   width: 100%;
 }
 
-#fbqzspeyph .gt_group_heading {
+#ggwgjqkzdp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -314,7 +314,7 @@ diabetes%>%
   vertical-align: middle;
 }
 
-#fbqzspeyph .gt_empty_group_heading {
+#ggwgjqkzdp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -329,15 +329,15 @@ diabetes%>%
   vertical-align: middle;
 }
 
-#fbqzspeyph .gt_from_md > :first-child {
+#ggwgjqkzdp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fbqzspeyph .gt_from_md > :last-child {
+#ggwgjqkzdp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fbqzspeyph .gt_row {
+#ggwgjqkzdp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -356,7 +356,7 @@ diabetes%>%
   overflow-x: hidden;
 }
 
-#fbqzspeyph .gt_stub {
+#ggwgjqkzdp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -369,7 +369,7 @@ diabetes%>%
   padding-right: 5px;
 }
 
-#fbqzspeyph .gt_stub_row_group {
+#ggwgjqkzdp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -383,11 +383,11 @@ diabetes%>%
   vertical-align: top;
 }
 
-#fbqzspeyph .gt_row_group_first td {
+#ggwgjqkzdp .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fbqzspeyph .gt_summary_row {
+#ggwgjqkzdp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -397,16 +397,16 @@ diabetes%>%
   padding-right: 5px;
 }
 
-#fbqzspeyph .gt_first_summary_row {
+#ggwgjqkzdp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fbqzspeyph .gt_first_summary_row.thick {
+#ggwgjqkzdp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fbqzspeyph .gt_last_summary_row {
+#ggwgjqkzdp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -416,7 +416,7 @@ diabetes%>%
   border-bottom-color: #D3D3D3;
 }
 
-#fbqzspeyph .gt_grand_summary_row {
+#ggwgjqkzdp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -426,7 +426,7 @@ diabetes%>%
   padding-right: 5px;
 }
 
-#fbqzspeyph .gt_first_grand_summary_row {
+#ggwgjqkzdp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -436,11 +436,11 @@ diabetes%>%
   border-top-color: #D3D3D3;
 }
 
-#fbqzspeyph .gt_striped {
+#ggwgjqkzdp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fbqzspeyph .gt_table_body {
+#ggwgjqkzdp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -449,7 +449,7 @@ diabetes%>%
   border-bottom-color: #D3D3D3;
 }
 
-#fbqzspeyph .gt_footnotes {
+#ggwgjqkzdp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -463,7 +463,7 @@ diabetes%>%
   border-right-color: #D3D3D3;
 }
 
-#fbqzspeyph .gt_footnote {
+#ggwgjqkzdp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -472,7 +472,7 @@ diabetes%>%
   padding-right: 5px;
 }
 
-#fbqzspeyph .gt_sourcenotes {
+#ggwgjqkzdp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -486,7 +486,7 @@ diabetes%>%
   border-right-color: #D3D3D3;
 }
 
-#fbqzspeyph .gt_sourcenote {
+#ggwgjqkzdp .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -494,64 +494,64 @@ diabetes%>%
   padding-right: 5px;
 }
 
-#fbqzspeyph .gt_left {
+#ggwgjqkzdp .gt_left {
   text-align: left;
 }
 
-#fbqzspeyph .gt_center {
+#ggwgjqkzdp .gt_center {
   text-align: center;
 }
 
-#fbqzspeyph .gt_right {
+#ggwgjqkzdp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fbqzspeyph .gt_font_normal {
+#ggwgjqkzdp .gt_font_normal {
   font-weight: normal;
 }
 
-#fbqzspeyph .gt_font_bold {
+#ggwgjqkzdp .gt_font_bold {
   font-weight: bold;
 }
 
-#fbqzspeyph .gt_font_italic {
+#ggwgjqkzdp .gt_font_italic {
   font-style: italic;
 }
 
-#fbqzspeyph .gt_super {
+#ggwgjqkzdp .gt_super {
   font-size: 65%;
 }
 
-#fbqzspeyph .gt_footnote_marks {
+#ggwgjqkzdp .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#fbqzspeyph .gt_asterisk {
+#ggwgjqkzdp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fbqzspeyph .gt_indent_1 {
+#ggwgjqkzdp .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fbqzspeyph .gt_indent_2 {
+#ggwgjqkzdp .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fbqzspeyph .gt_indent_3 {
+#ggwgjqkzdp .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fbqzspeyph .gt_indent_4 {
+#ggwgjqkzdp .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fbqzspeyph .gt_indent_5 {
+#ggwgjqkzdp .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -707,3 +707,91 @@ roc_curve$ci
 ## 95% CI: 0.7603-0.826 (DeLong)
 ```
 
+# Вопрос №5
+
+*Построить ROC-кривую и определить оптимальное значение инсулина для предсказания СД*
+
+
+```r
+roc_curve_ins <- roc(Outcome ~ Insulin, data = diabetes, ci = T)
+```
+
+```
+## Setting levels: control = No, case = Yes
+```
+
+```
+## Setting direction: controls < cases
+```
+
+```r
+roc_curve_ins
+```
+
+```
+## 
+## Call:
+## roc.formula(formula = Outcome ~ Insulin, data = diabetes, ci = T)
+## 
+## Data: Insulin in 264 controls (Outcome No) < 130 cases (Outcome Yes).
+## Area under the curve: 0.7316
+## 95% CI: 0.6809-0.7824 (DeLong)
+```
+
+```r
+ggroc(roc_curve_ins) +
+  theme_light()
+```
+
+![](ClinLab_HW_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+
+```r
+# Определим наиболее оптимальное значение инсулина
+
+roc_curve_ins %>% coords(x = "best", best.method = "closest.topleft")
+```
+
+```
+##   threshold specificity sensitivity
+## 1       121   0.6212121   0.7846154
+```
+
+Таким образом, оптимальным диагностическим критерием для предсказания СД является уровень инсулина *121 мкМЕ/мл*. Специфичность у такого критерия всего *0.62*, а чувствительность составляет *0.78*.
+
+## Комментарии взыскующего автора
+
+*Направление построения ROC-кривой может требовать обоснования. Критерием включения в исследования было отсутствие СД в анамнезе, и в датасете представлены только взрослые, а значит мы можем предположить, что преимущественно диагностироваться у них будет СД 2 типа, то есть инсулиннезависимый, реже - такие типы, как LADA. Помимо этого, по таблице, построенной в шестом чанке, видно, что уровень инсулина выше в группе с исходами. Поэтому направление кривой будет такое же, как и для глюкозы: мы ожидаем, что в группе исходов уровень инсулина выше, чем в контроле.*
+
+# Вопрос №6
+
+*Какая из количественных переменных обладает наибольшей площадью под ROC-кривой?*
+
+*А какая - наименьшей?*
+
+*И как это интерпретировать?*
+
+```r
+diabetes %>% 
+    pivot_longer(cols = !Outcome) %>% 
+    group_by(name) %>% 
+    summarise(AUC = roc(Outcome, value, ci = T)$ci[2] %>% round(3))
+```
+
+```
+## # A tibble: 9 × 2
+##   name                       AUC
+##   <chr>                    <dbl>
+## 1 Age                      0.687
+## 2 BloodPressure            0.608
+## 3 BMI                      0.687
+## 4 DiabetesPedigreeFunction 0.606
+## 5 Glucose                  0.793
+## 6 Glucose_mmol             0.793
+## 7 Insulin                  0.732
+## 8 Pregnancies              0.62 
+## 9 SkinThickness            0.663
+```
+
+Наибольшая площадь под кривой наблюдается для переменной глюкоза, на втором месте - инсулин. Наименьшая площадь характерна для переменной наследственного фактора. Иными словами, глюкоза крови обладает наибольшей силой в качестве диагностического критерия СД. Значит именно это исследование мы можем предложить в качестве основного (или первичного) для диагностики заболевания.
+
+Наименьшей предсказывающей силой обладает наследственность (что, кстати, стыкуется с нашим предположением о том, что у субъектов развивался СД2).
