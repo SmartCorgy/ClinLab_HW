@@ -4,17 +4,18 @@ author: "Ekaterina Fokina"
 date: "2022-10-24"
 output: 
   html_document:
-  css: style.css
-    keep_md: true
+     keep_md: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r, warning=FALSE}
+```{r, warning=FALSE, message=FALSE}
 library(tidyverse)
 library(pROC)
+library(gtsummary)
+library(ggplot2)
 ```
 
 
@@ -24,6 +25,7 @@ library(pROC)
 diabetes <- read.csv("diabetes.csv")
 
 summary(diabetes)
+str(diabetes)
 
 ```
 
@@ -37,8 +39,10 @@ summary(diabetes)
 diabetes <- diabetes %>%
   mutate(across(c(Glucose, BloodPressure, SkinThickness, Insulin, BMI), ~ ifelse(.x == 0, NA, .x)),
          Glucose_mmol = round(Glucose / 18, 1),
-         Glucose_mmol = as.numeric(Glucose_mmol))
+         Glucose_mmol = as.numeric(Glucose_mmol),
+         Outcome = ifelse(Outcome == 1, "Yes", "No"))
 
+glimpse(diabetes)
 
 ```
 
@@ -67,23 +71,52 @@ patients_with_diabetes
 patients_without_diabetes <- length(diabetes_no_nas[diabetes_no_nas < 7.8])
 patients_without_diabetes
 
+
 ```
 
 Таким образом, если использовать в качестве порогового критерия уровень глюкозы >= 7.8 ммоль/л, то сахарный диабет можно установить у **197** пациентов.
-У **566* пациентов нарушения толерантности к глюкозе нет.
+У **566** пациентов нарушения толерантности к глюкозе нет.
 
 <br>
+
+Посмотрим на сравнительную статистику групп с и без диабета
+
+```{r}
+diabetes%>% 
+    tbl_summary(by = Outcome) %>% 
+    add_p()
+```
+
 
 # Вопрос №2
 
 *ROC-кривая для предсказания сахарного диабета по уровню гликемии*
 
 ```{r}
-tbl_summary_my <- 
-  diabetes %>%
-  select(Glucose_mmol) %>%
-  tbl_summary()
+diabetes$Outcome = as.factor(diabetes$Outcome)
 
+roc_curve <- roc(Outcome ~ Glucose_mmol, data = diabetes, ci = T)
 
+roc_curve
+
+ggroc(roc_curve) +
+  theme_light()
+
+```
+
+# Вопрос №3
+
+*Чему равна площадь под ROC-кривой?*
+
+```{r}
+roc_curve$auc
+```
+
+# Вопрос №4
+
+*Чему равен 95% двусторонний доверительный интервал?*
+
+```{r}
+roc_curve$ci
 ```
 
